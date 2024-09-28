@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: .5s;
+    font-family: sans-serif;
+}
+
+.section {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Cormorant_Garamond', serif;
+}
+
+/* main */
+.main {
+    height: 100vh;
+    background: url(../media/banner/car_background.jpg);
+    background-color: #c1c1c1;
+    background-size: cover;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 66px;
+    padding-bottom: 30px;
+}
+
+.banner-text p {
+    font-size: 28px;
+    padding-bottom: 45px;
+}
+
+/* catalog */
+
+.card {
+    height: 400px;
+}
+
+.title h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 60px;
+}
+
+.catalog-items {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-img img {
+    width: 100%;
+    height: auto;
+}
+
+.catalog-item h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.catalog-item p {
+    font-size: 24px;
+    color: #FF5A00;
+}
+
+/* sale */
+.sale {
+    background: #f8f9fa;
+}
+
+.sale-content h2 {
+    font-size: 36px;
+}
+
+.sale-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* footer */
+.footer {
+    padding: 50px 0;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Элемент телефона */
+.phone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff5a00;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+    z-index: 1000;
+}
+
+/* Класс для отображения телефона */
+.phone.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

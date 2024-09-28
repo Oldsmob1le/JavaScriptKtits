@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобили</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main ">
+        <nav class="navbar navbar-expand-lg navbar-dark container-xl">
+            <a class="navbar-brand" href="index.html"> Автомобили
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#main">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalog">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sale">Акции</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="user.png" alt="User" width="20"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="logout.png" alt="Logout" width="18"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="banner d-flex justify-content-center align-items-center" style="background: url(../media/banner/fon.jpg); height: 80vh; background-size: cover;">
+            <div class="text-center text-white">
+                <h1>Мечта о новом автомобиле</h1>
+                <p>Откройте для себя лучшие предложения на новые и подержанные автомобили. Закажите тест-драйв прямо сейчас!</p>
+                <a href="#" class="btn btn-light">Смотреть каталог</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog section my-5" id="catalog">
+        <div class="title">
+            <h2 class="text-center">Каталог автомобилей</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="i (3).webp" class="card-img-top" alt="Car 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Автомобиль 1</h5>
+                            <p class="card-text">3 200 000 ₽</p>
+                            <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="i (1).webp" class="card-img-top" alt="Car 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Автомобиль 2</h5>
+                            <p class="card-text">2 800 000 ₽</p>
+                            <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="orig.jpeg" class="card-img-top" alt="Car 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Автомобиль 3</h5>
+                            <p class="card-text">3 500 000 ₽</p>
+                            <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sale bg-light" id="sale">
+        <div class="container text-center py-5">
+            <h2 class="py-3">Скидка 15% на все автомобили!</h2>
+            <p>Не упустите возможность купить свой мечтающий автомобиль со скидкой. Успейте заказать до конца месяца!</p>
+            <h3 class="py-3">Получить промокод</h3>
+            <form class="d-flex justify-content-center py-5">
+                <input type="email" class="form-control me-2" placeholder="Введите Email" aria-label="Email">
+                <button class="btn btn-primary" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="text-white">Автомобили</a>
+                    <p>© 2024 Абдулин Никита</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <a href="mailto:info@cars.com" class="text-white">info@cars.com</a><br>
+                    <a href="tel:+79176786529" class="text-white">+7(917) 678-65-29</a>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Навигация</h5>
+                    <a href="#main" class="text-white">Главная</a><br>
+                    <a href="#catalog" class="text-white">Каталог</a><br>
+                    <a href="#" class="text-white">О компании</a><br>
+                    <a href="#sale" class="text-white">Акции</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <p class="phone">+7 (987) 405-18-30</p>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

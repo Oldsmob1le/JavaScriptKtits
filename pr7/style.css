@@ -1,0 +1,11 @@
+body {
+    height: 2000px;
+    overflow: hidden;
+    position: relative;
+}
+
+#ball {
+    position: absolute;
+    width: 50px;
+    transition: transform 0.5s ease;
+}

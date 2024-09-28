@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.section {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding: 30px 0;
+    background-color: rgba(100, 100, 100, 0.6);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(43, 43, 43);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav a {
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    max-width: 840px;
+    margin: 100px auto;
+    cursor: pointer;
+}
+
+.faq_item {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 16px;
+}
+
+.item_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    position: relative;
+}
+.item_block h3 {
+    font-size: 26px;
+    font-weight: 500;
+    transition: .2s ease-in;
+}
+.faq_item p {
+    height: 0;
+    font-size: 20px;
+    overflow: hidden;
+    transition: .2s ease-in;
+}
+
+.item_block::after {
+    content: '▼';
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+.faq_item.active .item_block::after {
+    transform: rotate(180deg);
+}
+
+.faq_item.active .item_block h3 {
+    color: #007BFF;
+}

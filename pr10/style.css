@@ -1,0 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-content {
+    border-radius: 0.5rem;
+}
+
+.text-error {
+    color: salmon;
+    font-size: 0.875em;
+}

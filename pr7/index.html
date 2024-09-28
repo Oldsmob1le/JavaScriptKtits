@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Задание 1</h1>
+    <button class="btn" onclick="btnNone()">Кнопка</button>
+
+    <script>
+      let btn = document.querySelector(".btn");
+      function btnNone() {
+        btn.style.display = "none";
+      }
+    </script>
+
+    <h1>Задание 2</h1>
+    <div id="text">Меня нужно скрыть</div>
+    <button class="btn-two" onclick="textNone()">Скрыть</button>
+
+    <script>
+      let div = document.getElementById("text");
+      function textNone() {
+        div.style.display = "none";
+      }
+    </script>
+
+    <h1>Задание 3</h1>
+    <div id="text-btn">Меня нужно скрыть, а потом обратно показать</div>
+    <button class="btn-two" onclick="Btn()">Скрыть текст 2</button>
+
+    <script>
+      function Btn() {
+        let textBtnDiv = document.getElementById("text-btn");
+        if (textBtnDiv.style.display == "block") {
+          textBtnDiv.style.display = "none";
+        } else {
+          textBtnDiv.style.display = "block";
+        }
+      }
+    </script>
+
+    <h1>Задание 4</h1>
+    <p>Нажмите в любое место, чтобы мячик переместился</p>
+    <img src="https://ru.js.cx/clipart/ball.svg" id="ball" />
+
+    <script>
+      document.addEventListener("click", (event) => {
+        ball.style.left = `${event.clientX - 25}px`;
+        ball.style.top = `${event.clientY - 25}px`;
+      });
+    </script>
+    
+  </body>
+</html>
